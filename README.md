@@ -15,10 +15,17 @@ table.
 
 ### Response
 
-HTTP/1.1 200 OK Content-Type: application/json
+```HTTP/1.1 200 OK <br/>
+Content-Type: application/json
 
-\[ { \"id\": 1, \"name\": \"rice\", \"quantity\": 10, \"unit\": \"kg\"
-}, \... \]
+[
+    {
+        "name": "rice",
+        "quantity": 10,
+        "unit": "kg"
+    }
+]
+```
 
 ## POST /BrandA
 
@@ -30,7 +37,7 @@ Creates a new product in the \"BrandA\" table.
 Content-Type:
 application/json
 
-{ \"name\": \"rice\", \"quantity\": 10, \"unit\": \"kg\" }
+{ <br/>*Tabspace*"name": "rice", <br/>*Tabspace*"quantity": 10, <br/>*Tabspace*"unit": "kg" }
 ```
 
 ### Response
