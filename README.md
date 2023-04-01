@@ -15,7 +15,8 @@ table.
 
 ### Response
 
-```HTTP/1.1 200 OK <br/>
+```
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 [
@@ -33,19 +34,31 @@ Creates a new product in the \"BrandA\" table.
 
 ### Request
 
-```POST http://localhost:8000/BrandA
-Content-Type:
-application/json
-
-{ <br/>*Tabspace*"name": "rice", <br/>*Tabspace*"quantity": 10, <br/>*Tabspace*"unit": "kg" }
+```
+POST http://localhost:8000/BrandA
+Content-Type: application/json
+body:
+{
+    "name": "rice",
+    "quantity": 10,
+    "unit": "kg"
+}
 ```
 
 ### Response
 
-HTTP/1.1 200 OK Content-Type: application/json
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
 
-\[ { \"id\": 1, \"name\": \"rice\", \"quantity\": 10, \"unit\": \"kg\"
-}, \... \]
+[
+    {
+        "name": "rice",
+        "quantity": 10,
+        "unit": "kg"
+    }
+]
+```
 
 ## Data Model
 
